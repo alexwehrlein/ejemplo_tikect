@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tickt';
+  
+  imprimir() {
+    let element: HTMLElement = document.getElementsByClassName(
+      'btnPrint'
+    )[0] as HTMLElement;
+    element.click();
+  }
+  
 }
